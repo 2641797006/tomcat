@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <title>Ex3 Servlet</title>
+  <link rel="icon" type="image/x-icon"  href="img/favicon.ico"/>
+  <link rel="stylesheet" href="//cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+<style>
+.prompt{
+  width: 120px;
+}
+</style>
+</head>
+<body>
+
+<div style="padding: 100px 100px 10px;">
+  <form class="bs-example bs-example-form" role="form" action="/ex3/servlet" method="post">
+    <div class="input-group">
+      <span class="input-group-btn">
+        <button class="btn btn-default prompt" type="button">
+          用户名
+        </button>
+      </span>
+      <input type="text" class="form-control" name="username" placeholder="user name" required>
+    </div>
+    <br/><br/>
+    <div class="input-group">
+      <span class="input-group-btn">
+        <button class="btn btn-default prompt" type="button">
+          Email
+        </button>
+      </span>
+      <input type="text" class="form-control" name="email" placeholder="your email" required>
+    </div>
+    <br/><br/>
+    <div class="input-group">
+      <span class="input-group-btn">
+        <button class="btn btn-default prompt" type="button">
+          通信地址
+        </button>
+      </span>
+      <input type="text" class="form-control" name="address" placeholder="contact address" required>
+    </div>
+    <br/><br/>
+      <span class="input-group-btn">
+        <button class="btn btn-default prompt" type="button">
+          个人简历
+        </button>
+      </span>
+      <textarea class="form-control" rows="4" name="resume" placeholder="你的简历..." required></textarea>
+    <br/><br/>
+  <button type="submit" class="btn btn-primary btn-lg btn-block">提交</button>
+  </form>
+</div>  
+
+</body>
+</html>
